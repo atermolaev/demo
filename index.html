@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script src="js/script.js"></script>
+        <script>
+            window.onload = function(){
+                const main = new Main();
+                const box = new Box();
+
+                console.log('Main ', main.method('first'))
+                console.log('Box ', box.method('second'))
+
+                $('p').click(function(){
+                    console.log('click');
+                })
+            }
+        </script>
+        <style>
+            body {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100vw;
+                height: 100vh;
+                padding: 0;
+                margin: 0;
+            }
+
+            p {
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Смотри в консоль</p>
+    </body>
+</html>
