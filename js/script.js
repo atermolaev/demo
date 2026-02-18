@@ -1,3 +1,8 @@
+// Данная функция взята отсюда:
+// https://javascript.ru/tutorial/object/inheritance?ysclid=mlro992q2x151429307#nasledovanie-na-klassah-funkciya-extend
+// Автор функции extend(inherit) Дуглас Крокфорд(https://www.crockford.com/)
+// Функция дополнена методом _super(), для вызова конструктора в новом контексте.
+//
 // Добавление метода в прототип Object
 Object.prototype.inherit = function (Parent) {
   // 1. Создание промежуточного конструктора.
